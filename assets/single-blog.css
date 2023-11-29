@@ -1,0 +1,58 @@
+/* single blog */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-image: url('https://kudos.qodeinteractive.com/wp-content/uploads/2016/08/blog-cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust the alpha value for the overlay darkness */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.overlay h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+}
+
+.category-name{
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 300;
+    color:#797979;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.text-decoration-none{
+    text-decoration: none !important;
+}
+
+
+.single-share-icon, .hover-icon{
+    font-size: 20px;
+    color:#444;
+}

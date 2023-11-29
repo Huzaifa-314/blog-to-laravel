@@ -1,0 +1,48 @@
+:root {
+    --main-color: #a80000;
+}
+  
+.blog-post .blog-img .overlay,
+.blog-post .blog-img .post-meta {
+position: absolute;
+opacity: 0;
+-webkit-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+
+.blog-post .blog-img .overlay {
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+}
+
+.blog-post .content .title {
+font-size: 18px;
+font-weight: bold;
+}
+
+a:hover {
+color: var(--main-color) !important;
+}
+
+.blog-post:hover .blog-img .overlay {
+opacity: 0.3;
+}
+
+.share-icon{
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.share-icon, .hover-icon{
+    font-size: 20px;
+    color:#444;
+}
+
+.blog-post:hover .share-icon{
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+

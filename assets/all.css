@@ -1,0 +1,65 @@
+:root {
+    --main-color: #a80000;
+}
+
+body {
+    margin: 0;
+}
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+#preloader.fade-out {
+    opacity: 0;
+}
+
+.flip-container {
+    perspective: 800px;
+    width: 80px;
+    height: 80px;
+}
+
+.flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    border-radius: 5px;
+    animation: flipAnimation 1.8s infinite;
+    background-color: var(--main-color);
+}
+
+a{
+    text-decoration: none !important;
+    color:black;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+*{
+    list-style: none;
+}
+
+@keyframes flipAnimation {
+    0% {
+        transform: perspective(200px) rotateZ(180deg);
+    }
+    50% {
+        transform: perspective(200px) rotateY(180deg);
+    }
+}
